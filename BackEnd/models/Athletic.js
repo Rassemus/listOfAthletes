@@ -13,11 +13,6 @@ class Athletic {
   }
 
   async save() {
-    /*let d = new Date();
-    let yyyy = d.getFullYear();
-    let mm = d.getMonth() + 1;
-    let dd = d.getDate();
-    let createdDate = `${yyyy}-${mm}-${dd}`;*/
 
     let sql = `INSERT INTO urheilijat(etunimi,sukunimi,syntymavuosi,kutsumanimi,paino,www,laji,saavutukset) VALUES('${this.etunimi}', '${this.sukunimi}', '${this.syntymävuosi}','${this.kutsumanimi}','${this.paino}','${this.www}','${this.laji}','${this.saavutukset}')`;
 
@@ -35,11 +30,6 @@ class Athletic {
     let sql = "SELECT * FROM urheilijat;";
     return db.execute(sql);
   }
-
-  /*static findById(id) {
-    let sql = `SELECT * FROM posts WHERE id=${id}`;
-    return db.execute(sql);
-  }*/
 
   static findById(id) {
     let sql = `SELECT * FROM urheilijat WHERE id=${id};`;
