@@ -34,10 +34,10 @@ const GlobalState = (props) => {
       console.error(error);
     }
   };
-  const setUrheilijat = async (uusiPuhelintieto) => {
+  const setUrheilijat = async (uusiUrheilija) => {
     try {
       const res = await axios
-        .post(`http://localhost:3001/urheilijat`, uusiPuhelintieto)
+        .post(`http://localhost:3001/urheilijat`, uusiUrheilija)
         .then((res) => {
           dispatch({ type: ADD_URHEILIJA, payload: res.data });
           console.log(res.data);

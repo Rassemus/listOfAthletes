@@ -21,7 +21,7 @@ export default (state, action) => {
       case "ADD_URHEILIJA":
         return {
           ...state,
-          urheilijat: [action.payload, ...state.urheilijat],
+          urheilijat: [action.payload, ...state.urheilijat.athletics],
         };
       case "EDIT_URHEILIJA":
         return {

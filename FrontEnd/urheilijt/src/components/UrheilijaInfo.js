@@ -22,7 +22,7 @@ const UrheilijaInfo = (props) => {
     <div className="card card-body mb-2 display:flex, justifyContent: flex-end">
       <div style={{ display: "flex", justifyContent: "space-between" }}>
       <div>
-        <h4>{etunimi} "{kutsumanimi}" {sukunimi}</h4>
+        <h4>{etunimi} {kutsumanimi != "" ? `"${kutsumanimi}"`: null} {sukunimi}</h4>
         <div style={{ display: "flex", justifyContent: "flex-left" }}>
         <button className="btn btn-info" onClick={onShowClick.bind(this)}>
         {NaytaUrheilija ? (

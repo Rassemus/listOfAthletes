@@ -29,7 +29,7 @@ export default function LisaaUrheilija() {
     console.log("Tarkistetaan uusiUrheilija -objekti:");
     console.log(uusiUrheilija);
 
-    UrheilijatContext.setYhteystiedot(uusiUrheilija);
+    UrheilijatContext.setUrheilijat(uusiUrheilija);
     history("/");
   };
   return (
@@ -80,7 +80,9 @@ export default function LisaaUrheilija() {
             <label htmlFor="syntymavuosi">Syntymävuosi</label>
             <input
               id="syntymavuositieto"
-              type="date"
+              type="number"
+              min="1900"
+              max="3100"
               name="syntymavuosi"
               className="form-control form-control-lg"
               placeholder="Syötä syntymävuosi..."

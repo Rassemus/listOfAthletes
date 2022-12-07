@@ -120,7 +120,7 @@ const MuokkaaUrheilija = () => {
             <input
               type="number"
               min="1900"
-              max="2100"
+              max="3100"
               name="syntymavuosi"
               className="form-control form-control-lg"
               placeholder="Syötä syntymavuosi..."
