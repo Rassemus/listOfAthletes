@@ -3,7 +3,7 @@ MySql database,CRUD, express.js Rest-interface, react. (School project)
 
 - npm init
 - cd /backend -> npm run dev
-- cd /frontend/urheilijat -> npm start
+- cd /frontend/urheilijt -> npm start
 
 ## Database
 Kansio sisältää tietokannan luonti lauseet
